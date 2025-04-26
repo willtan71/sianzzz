@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 const navItems = [
   {
     title: "Contact",
-    link: "/contact",
+    link: "https://wa.me/6596706030",
+    target: "_blank" as "_blank",
   },
 ];
 

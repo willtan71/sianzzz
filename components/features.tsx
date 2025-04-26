@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 import { GridLineHorizontal, GridLineVertical } from "./grid-lines";
 import { SkeletonOne } from "./skeletons/first";
 import { SkeletonTwo } from "./skeletons/second";
-import { SkeletonFour } from "./skeletons/fourth";
 import { SkeletonThree } from "./skeletons/third";
+import { SkeletonFour } from "./skeletons/fourth";
 
 export const Features = () => {
   const features = [
@@ -41,7 +41,7 @@ export const Features = () => {
     },
   ];
   return (
-    <div className="relative z-20 py-10 md:py-40">
+    <div id="services" className="relative z-20 py-10 md:py-40">
       <Heading as="h2">Our Services</Heading>
       <Subheading className="text-center ">
         From web development to AI integration, Sianzzz Consultancy provides comprehensive

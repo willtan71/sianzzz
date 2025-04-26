@@ -59,8 +59,8 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       </div>
       <div className="flex space-x-2 items-center">
         <ModeToggle />
-        <Button as={Link} href="/contact">
-          Contact
+        <Button as={Link} href="https://wa.me/6596706030" target="_blank" rel="noopener noreferrer">
+          WhatsApp
         </Button>
       </div>
     </div>

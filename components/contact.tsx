@@ -15,11 +15,7 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandX,
-} from "@tabler/icons-react";
+
 import Password from "./password";
 import { Button } from "./button";
 import { Logo } from "./Logo";
@@ -67,29 +63,7 @@ export function ContactForm() {
     } catch (e) {}
   }
 
-  const socials = [
-    {
-      title: "twitter",
-      href: "https://twitter.com/mannupaaji",
-      icon: (
-        <IconBrandX className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
-      ),
-    },
-    {
-      title: "github",
-      href: "https://github.com/manuarora700",
-      icon: (
-        <IconBrandGithub className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
-      ),
-    },
-    {
-      title: "linkedin",
-      href: "https://linkedin.com/manuarora28",
-      icon: (
-        <IconBrandLinkedin className="h-5 w-5 text-muted dark:text-muted-dark hover:text-black" />
-      ),
-    },
-  ];
+
 
   return (
     <Form {...form}>
@@ -127,7 +101,7 @@ export function ContactForm() {
                           <input
                             id="name"
                             type="name"
-                            placeholder="Manu Arora"
+                            placeholder="Your name"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -153,7 +127,7 @@ export function ContactForm() {
                           <input
                             id="email"
                             type="email"
-                            placeholder="hello@johndoe.com"
+                            placeholder="Your email"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -172,14 +146,14 @@ export function ContactForm() {
                         htmlFor="company"
                         className="block text-sm font-medium leading-6 text-neutral-700 dark:text-muted-dark"
                       >
-                        Company
+                        Company/Website
                       </label>
                       <FormControl>
                         <div className="mt-2">
                           <input
                             id="company"
                             type="company"
-                            placeholder="Aceternity Labs, LLC"
+                            placeholder="Your company or website"
                             className="block w-full bg-white dark:bg-neutral-900 px-4 rounded-md border-0 py-1.5  shadow-aceternity text-black placeholder:text-gray-400 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm sm:leading-6 dark:text-white"
                             {...field}
                           />
@@ -198,7 +172,7 @@ export function ContactForm() {
                         htmlFor="message"
                         className="block text-sm font-medium leading-6 text-neutral-700 dark:text-muted-dark"
                       >
-                        message
+                        Message
                       </label>
                       <FormControl>
                         <div className="mt-2">
@@ -222,13 +196,7 @@ export function ContactForm() {
               </form>
             </div>
           </div>
-          <div className="flex items-center justify-center space-x-4 py-4">
-            {socials.map((social) => (
-              <Link href={social.href} key={social.title}>
-                {social.icon}
-              </Link>
-            ))}
-          </div>
+
         </div>
       </div>
     </Form>

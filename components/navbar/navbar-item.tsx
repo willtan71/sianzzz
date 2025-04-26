@@ -22,18 +22,22 @@ export function NavBarItem({
 }: Props) {
   const pathname = usePathname();
 
+  const isExternalUrl = href.startsWith('http');
+  const Component = isExternalUrl ? 'a' : Link;
+
   return (
-    <Link
+    <Component
       href={href}
       className={cn(
         "flex items-center justify-center  text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-[#F5F5F5] dark:hover:bg-neutral-800 hover:text-black text-muted dark:text-muted-dark",
-        (active || pathname?.includes(href)) &&
+        (!isExternalUrl && (active || pathname?.includes(href))) &&
           "bg-gray-100 dark:bg-neutral-800 text-black",
         className
       )}
       target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
     >
       {children}
-    </Link>
+    </Component>
   );
 }

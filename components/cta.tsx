@@ -29,13 +29,14 @@ export const CTA = () => {
               </h2>
               <p className="mt-4 max-w-[26rem] text-center mx-auto  text-base/6 text-neutral-200">
                 <Balancer>
-                  Get instant access to our state of the art project and join
-                  the waitlist.
+                  Talk to us and let's bring your project from idea to live!
                 </Balancer>
               </p>
 
               <div className="relative z-10 mx-auto flex justify-center mt-6">
-                <Button>Join Waitlist</Button>
+                <a href="https://wa.me/6596706030" target="_blank" rel="noopener noreferrer">
+                  <Button>WhatsApp Sianzzz</Button>
+                </a>
               </div>
             </div>
           </div>

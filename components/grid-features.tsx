@@ -15,46 +15,46 @@ export const GridFeatures = () => {
     {
       title: "For Startups",
       description:
-        "One-stop solution provider for startups and solopreneurs",
+        "One-stop solution provider for startups and solopreneurs ... by solopreneurs (we know you)!",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "Sustainability & Growth",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Long-term win-win partnership for sustainability and your business growth.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Bootstrap Breakthrough",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Solutions that won't break the bank. We deliver result without the ridiculous costs.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Robust Build",
+      description: "We build your project on robust state-of-the-art cloud architecture that ensure scalability.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Efficient Workflow",
+      description: "Streamline your operations and maximize productivity with our efficient workflow solutions.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Responsive Helpdesk",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Get fast, friendly support whenever you need it.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Tailored To Your Needs",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Solutions crafted uniquely for your business goals.",
       icon: <IconAdjustmentsBolt />,
     },
     {
       title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      description: "Talk to us. Let us bring your business to the next level!",
       icon: <IconHeart />,
     },
   ];
