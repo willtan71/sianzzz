@@ -29,7 +29,7 @@ export const CTA = () => {
               </h2>
               <p className="mt-4 max-w-[26rem] text-center mx-auto  text-base/6 text-neutral-200">
                 <Balancer>
-                  Talk to us and let's bring your project from idea to live!
+                  Talk to us and let&apos;s bring your project from idea to live!
                 </Balancer>
               </p>
 
